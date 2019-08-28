@@ -1,0 +1,163 @@
+/*
+Created by Bianca Tang
+FreeCodeCamp Responsive Web Design Project - Tribute Page
+*/
+
+html{
+  min-width: 100%;
+  min-height: 100%;
+  background-color: white;
+}
+
+body{
+  min-height: 100%;
+  margin: 10vh 5vw;
+  border-radius: 5px;
+  background-color: #d9d9d9;
+}
+
+/*All navigation related rules start here*/
+nav{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  height: 10vh;
+  align-items: center;
+  background-color: grey;
+  border-radius: 5px;
+}
+.navLink{
+  text-decoration: none;
+  color: #d9d9d9;
+}
+.navLink:hover{
+  color: white;
+  animation-name: textGrow;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
+@keyframes textGrow{
+  100%{
+    transform: scale(1.1);
+  }
+}
+#backToTop{
+  position: fixed;
+  left: 90%;
+  top: 90%;
+  height: 30px;
+  width: 30px;
+  background-color: #d9d9d9;
+  border: 2px solid grey;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+#backToTopTriangle{
+  position: inherit;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+#backToTopTriangle:hover{
+  animation-name: backToTopHover;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
+@keyframes backToTopHover{
+  100%{
+    opacity: 0.8;
+  }
+}
+/*All navigation related rules end here*/
+
+/*All image related rules start here*/
+img{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  max-width: 100%;
+}
+#img-div{
+  width: 95%;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  background-color: black;
+}
+#img-caption{
+  color: #d9d9d9;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  font-family: "Cormorant", Times, serif;
+}
+/*All image related rules end here*/
+
+/*All header related rules start here*/
+h1{
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: "Lora", Times, serif;
+  color: black;
+  margin-bottom: 0;
+}
+h2{
+  margin-top: 1vh;
+  font-size: 1.4em;
+  font-weight: 100;
+  font-family: "Cormorant", Times, serif;
+  color: #6b6b6b;
+}
+h3{
+  font-family: "Lora", Times, serif;
+  font-size: 1.25em;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 650px;
+}
+#pageHeaders{
+  text-align: center;
+  padding: 5vh;
+}
+/*All header related rules end here*/
+
+/*Body paragraph text rules*/
+p{
+  font-family: "Cormorant", Times, serif;
+  font-size: 1.1em;
+  width: 80%;
+  margin: 0 10%;
+  text-align: center;
+}
+#tribute-info{
+  padding-top: 3%;
+}
+#extraInfo{
+  padding-bottom: 3%;
+}
+
+/*Rules for each "field" that has an award: Physics, Chem, etc*/
+.section{
+  margin: 5vh 0 5vh;
+}
+
+/*List rules start here*/
+ul{
+  max-width: 800px;
+  margin: 0 auto;
+}
+li{
+  font-family: "Cormorant", Times, serif;
+  font-size: 1.1em;
+  margin: 0 15%;
+  font-weight: bold;
+}
+.lInner{
+  margin-left: 0 !important;
+  font-weight: normal !important;
+  width: 100%;
+}
+/*List rules end here*/
